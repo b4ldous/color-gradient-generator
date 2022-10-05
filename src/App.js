@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import GradiendGenerator from "./components/GradiendGenerator";
+import GradientThreeColors from "./components/GradientThreeColors";
+import GradientsCircle from "./components/GradientsCircle";
+import GradientCircleThreeColors from "./components/GradientCircleThreeColors";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Container sx={{ mt: "50px" }}>
+        <Typography variant="h2" sx={{ fontWeight: 1000, textAlign: "center" }}>
+          {" "}
+          Generador CSS{" "}
+        </Typography>
+        <GradiendGenerator />
+        <GradientThreeColors />
+        <GradientsCircle />
+        <GradientCircleThreeColors />
+      </Container>
+    </>
   );
 }
 
