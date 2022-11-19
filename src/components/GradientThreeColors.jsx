@@ -78,7 +78,7 @@ const GradientThreeColors = () => {
                 component="input"
                 type="text"
                 value={grades}
-                onChange={(e) => setGrades(+e.target.value)}
+                onChange={(e) => setGrades(e.target.value)}
               />
             </Box>
           </Box>

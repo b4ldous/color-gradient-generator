@@ -6,7 +6,9 @@ import { Typography } from "@mui/material";
 const GradiendGenerator = () => {
   const [color1, setColor1] = useState("#edd400");
   const [color2, setColor2] = useState("#cc0000");
-  const [grades, setGrades] = useState(0);
+  const [grades, setGrades] = useState(45);
+
+  
 
   return (
     <Box sx={{ mt: "50px" }}>
@@ -50,7 +52,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="color"
                 value={color1}
-                onChange={(e) => setColor1(e.target.value)}
+                onChange={(e) => setColor1(+e.target.value)}
               />
             </Box>
             <Box sx={{ width: "50px" }}>
@@ -59,7 +61,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="color"
                 value={color2}
-                onChange={(e) => setColor2(e.target.value)}
+                onChange={(e) => setColor2(+e.target.value)}
               />
             </Box>
             <Box sx={{ width: "50px" }}>
@@ -68,7 +70,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="text"
                 value={grades}
-                onChange={(e) => setGrades(+e.target.value)}
+                onChange={(e) => setGrades(e.target.value)}
               />
             </Box>
           </Box>
