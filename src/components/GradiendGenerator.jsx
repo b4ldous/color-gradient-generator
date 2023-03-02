@@ -52,7 +52,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="color"
                 value={color1}
-                onChange={(e) => setColor1(+e.target.value)}
+                onChange={(e) => setColor1(e.target.value)}
               />
             </Box>
             <Box sx={{ width: "50px" }}>
@@ -61,7 +61,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="color"
                 value={color2}
-                onChange={(e) => setColor2(+e.target.value)}
+                onChange={(e) => setColor2(e.target.value)}
               />
             </Box>
             <Box sx={{ width: "50px" }}>
@@ -70,7 +70,7 @@ const GradiendGenerator = () => {
                 component="input"
                 type="text"
                 value={grades}
-                onChange={(e) => setGrades(e.target.value)}
+                onChange={(e) => setGrades(+e.target.value)}
               />
             </Box>
           </Box>
