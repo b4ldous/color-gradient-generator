@@ -68,9 +68,9 @@ const GradiendGenerator = () => {
               <Box
                 sx={{ width: "50px", height: "50px" }}
                 component="input"
-                type="text"
+                type="number"
                 value={grades}
-                onChange={(e) => setGrades(+e.target.value)}
+                onChange={(e) => setGrades(e.target.value)}
               />
             </Box>
           </Box>
